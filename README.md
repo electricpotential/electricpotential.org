@@ -1,5 +1,5 @@
 # electricpotential.org
-The main website https://electricpotential.org
+The main website https://electricpotential.org (to be migrated to)
 
 # Dev intial setup
 
