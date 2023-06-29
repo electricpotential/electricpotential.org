@@ -21,7 +21,7 @@ In your terminal, create a folder to store the project:
 
 2. Clone this repository `git clone git@github.com:electricpotential/electricpotential.org.git`
 
-3. Run the web app `cd web && pnpm i && pnpm dev``
+3. Run the web app `cd web && pnpm i && pnpm dev`
 
 Now you can view your app as you develop on http://localhost:3000
 
@@ -29,8 +29,8 @@ Now you can view your app as you develop on http://localhost:3000
 
 Feel free to use whatever, but these are essential tools for my workflow
 
- - Visual Studio Code (IMPORTANT: This is DIFFERENT from Visual Studio)
+ - IDE: Visual Studio Code (IMPORTANT: This is DIFFERENT from Visual Studio)
    - Extensions: GitLens, Prettier, ESLint, TailwindCSS Intellisense
- - Iterm 2 (rather than using the regular terminal)
+ - Terminal: Iterm 2 (rather than using the regular terminal)
 
 
