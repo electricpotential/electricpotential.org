@@ -25,3 +25,30 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@font-face {
+	font-family: "Poppins";
+	src: url("/fonts/Poppins/Poppins-Regular.ttf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Lucette";
+	src: url("/fonts/LUCETTE/font/otf/Lucette-Regular.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+:root {
+	font-family: "Poppins";
+	font-weight: 400;
+}
+
+.smooth-transition {
+  @apply transition duration-200 ease-in-out;
+}
+
+.smooth-transition-all {
+  @apply transition-all duration-200 ease-out;
+}
