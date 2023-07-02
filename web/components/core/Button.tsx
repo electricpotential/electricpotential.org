@@ -8,7 +8,7 @@ export const Button: FC<
     <button
       onClick={onClick}
       className={clsx(
-        "flex items-center justify-center rounded-lg p-4 bg-blue-500",
+        "flex items-center justify-center rounded-lg p-4 bg-electric-sky",
         className
       )}
     >
