@@ -11,11 +11,6 @@ module.exports = {
         body: ["Poppins"],
         title: ["Lucette"],
       },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
       colors: {
         "electric-yellow": "#E5FF7E",
         "electric-cyan": "#7AEFF7",
