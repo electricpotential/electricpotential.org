@@ -1,4 +1,5 @@
 "use client"
+import { SubscriptionForm } from "@/components/core/SubscriptionForm"
 import Image from "next/image"
 import { FC } from "react"
 
@@ -107,6 +108,10 @@ export default function Home() {
                   alt="hands-touching"
                 />
               </div>
+            </div>
+            {/* Subscription form */}
+            <div className="flex justify-center">
+              <SubscriptionForm />
             </div>
           </div>
         </div>
