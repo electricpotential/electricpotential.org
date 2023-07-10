@@ -1,5 +1,6 @@
 "use client"
 
+import { GoArrow } from "@/components/icons"
 import { useState } from "react"
 
 export const SubscriptionForm = () => {
@@ -19,6 +20,7 @@ export const SubscriptionForm = () => {
     }
 
     try {
+      // TODO: add some loading state UI
       const response = await fetch("/api/subscribe", {
         method: "PUT",
         body: JSON.stringify(data),
@@ -32,14 +34,18 @@ export const SubscriptionForm = () => {
 
       const responseData = await response.json()
       console.log("subscription response:", responseData)
+      alert(`${email.value} has been successfully subscribed`) // TODO: improve UI of confirmation message
     } catch (error: any) {
       console.log("Error in submitting form subscription", error.message)
+      alert("Error in submitting form subscription")
     }
   }
 
   return (
     <div className="flex flex-col gap-[16px] text-dark w-max">
-      <span className="">Subscribe to our newsletter to stay up-to-date</span>
+      <span className="mx-5">
+        Subscribe to our newsletter to stay up-to-date ✨
+      </span>
       <form onSubmit={handleSubmit} className="flex flex-row w-full">
         <input
           required
@@ -52,9 +58,11 @@ export const SubscriptionForm = () => {
           placeholder="Type in your email"
         ></input>
         <button
-          className="w-[40px] bg-black text-white p-1"
+          className="font-sans flex items-center justify-center w-[26px] h-[26px] bg-black text-white p-1"
           type="submit"
-        >{`->`}</button>
+        >
+          <GoArrow className="w-2.5 fill-white" />
+        </button>
       </form>
     </div>
   )
