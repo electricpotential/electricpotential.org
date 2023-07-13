@@ -17,15 +17,19 @@ First, make sure you have the following installed
 If you've cloned Github repositories before, you can probably skip this step. Otherwise, enter the following commands in the terminal and set up an SSH key with your Github account.
 
 1. Generate the SSH key on your machine with the following command (where `$1` is replaced with a unique identifier like the email for your Github account, and `$2` is replaced with the name of the file, i.e. `yourname_git_rsa`)
+
 `ssh-keygen -t rsa -C "$1" -f ~/.ssh/$2 -N ""`
 
 2. Print out the **_public_** key to copy and add new key on Account Settings -> SSH keys on github.com
+
 `cat ~/.ssh/$2.pub`
 
 3. Add the SSH keys to your SSH agent
+
 `ssh-add --apple-use-keychain ~/.ssh/$2`
 
 4. Add this into your `~/.ssh/config` so that the system remembers to use SSH keys per reboot
+
 ```
 Host *
   AddKeysToAgent yes
