@@ -51,6 +51,14 @@ In your terminal, create a folder to store the project:
 
 Now you can view your app as you develop on http://localhost:3000
 
+## Environment variables
+
+Add a `.env` file to the root folder `web` and add in the Send Grid API key like so
+
+`SENDGRID_API_KEY=yoursecretkey`
+
+IMPORTANT: Do NOT publish the .env file or API secret keys anywhere that is publicly viewable! The `.gitignore` has `.env` in it, so it should not happen unless you purposely add it.
+
 ## Recommended environment
 
 Feel free to use whatever, but these are essential tools for my workflow
